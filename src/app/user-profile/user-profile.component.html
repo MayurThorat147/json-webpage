@@ -1,0 +1,14 @@
+<div>
+    <div *ngIf="user">
+      <p>I'm {{ user.firstname }} {{ user.lastname }} and I'm above {{ user.age }} years.</p>
+      <p>You can send your emails to {{ user.email }}.</p>
+      <p>I live in the state of {{ user.state }}.</p>
+      <p>I like to play {{ user.tags.join(', ') }}.</p>
+      <p>And please {{ user.status }}.</p>
+      <p>Please reach out to me on my phone number {{ user.phoneNumber }}.</p>
+    </div>
+    <div *ngIf="!user">
+      <p>No user data available.</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,8 @@
+<div>
+    <mat-label>Tags</mat-label> <br>
+    <div *ngFor="let tag of tags; let i = index" class="tag">
+      {{ tag }}
+      <button (click)="removeTag(i)">x</button>
+    </div>
+    <input type="text" [(ngModel)]="tagInput" (keyup.enter)="addTag()">
+  </div>
