@@ -34,7 +34,7 @@ export class UserRegistrationComponent {
     state: '',
     country: '',
     address: '',
-    tagInput: '',
+    tagNameInputValue: '',
     status: '',
   });
   }

@@ -1,8 +1,10 @@
-<div>
-    <mat-label>Tags</mat-label> <br>
-    <div *ngFor="let tag of tags; let i = index" class="tag">
-      {{ tag }}
-      <button (click)="removeTag(i)">x</button>
-    </div>
-    <input type="text" [(ngModel)]="tagInput" (keyup.enter)="addTag()">
-  </div>
+<mat-checkbox [(ngModel)]="addTagsOnEnter">Add Tags on Enter</mat-checkbox><br>
+            <mat-form-field appearance="fill">
+                <input matInput [(ngModel)]="tagNameInputValue" (keyup.enter)="addTag(tagNameInputValue)">
+            </mat-form-field>
+            <div *ngFor="let tag of tags; let i = index">
+                <span>{{ tag }}</span>
+                <button mat-icon-button (click)="removeTag(i)">
+                    <mat-icon>close</mat-icon>
+                </button>
+            </div>

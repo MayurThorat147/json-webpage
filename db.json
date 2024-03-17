@@ -10,70 +10,14 @@
       "state": "Maharashtra",
       "country": "India",
       "address": "706,Shree Saheba",
-      "tagInput": [
+      "tagNameInputValue": [
         "Tag1"
       ],
       "status": true,
       "id": "1aba"
     },
     {
-      "id": "f771",
-      "firstname": "Himanshu",
-      "lastname": "Jha",
-      "imageUrl": "",
-      "email": "himanshu@gmail.com",
-      "phoneNumber": "9082337371",
-      "age": 34,
-      "state": "delhi",
-      "country": "india",
-      "address": "rohini,sec-4",
-      "tagInput": "",
-      "status": ""
-    },
-    {
-      "id": "8e1d",
-      "firstname": "Himanshu",
-      "lastname": "Jha",
-      "imageUrl": "",
-      "email": "himanshu@gmail.com",
-      "phoneNumber": "9082337371",
-      "age": 34,
-      "state": "delhi",
-      "country": "india",
-      "address": "rohini,sec-4",
-      "tagInput": "",
-      "status": true
-    },
-    {
-      "id": "663d",
-      "firstname": "Himanshu",
-      "lastname": "Jha",
-      "imageUrl": "",
-      "email": "himanshu@gmail.com",
-      "phoneNumber": "9082337371",
-      "age": 34,
-      "state": "delhi",
-      "country": "india",
-      "address": "rohini,sec-4",
-      "tagInput": "",
-      "status": true
-    },
-    {
-      "id": "8277",
-      "firstname": "rahul",
-      "lastname": "kumar singh",
-      "imageUrl": "C:\\fakepath\\desk.jpg",
-      "email": "rahulsingh@gmail.com",
-      "phoneNumber": "8879998778",
-      "age": 34,
-      "state": "kerala",
-      "country": "new zealand",
-      "address": "park sion",
-      "tagInput": "",
-      "status": ""
-    },
-    {
-      "id": "0e52",
+      "id": "4fbb",
       "firstname": "",
       "lastname": "",
       "imageUrl": "",
@@ -83,7 +27,7 @@
       "state": "",
       "country": "",
       "address": "",
-      "tagInput": "",
+      "tagNameInputValue": "",
       "status": ""
     }
   ]
