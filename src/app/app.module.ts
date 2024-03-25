@@ -16,13 +16,16 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatIconModule} from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatChipsModule } from '@angular/material/chips';
+import {MatCardModule} from '@angular/material/card';
+import { TagInputModule } from 'ngx-chips';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     UserRegistrationComponent,
-    UserProfileComponent
+    UserProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatIconModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MatChipsModule,
+    MatCardModule,
+    TagInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

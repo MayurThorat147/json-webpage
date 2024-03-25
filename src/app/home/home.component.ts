@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-
+import { MatChipInputEvent } from '@angular/material/chips';
+import { UserRegistrationComponent } from '../user-registration/user-registration.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-home',
@@ -7,18 +9,19 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  addTagsOnEnter: boolean = false;
-  tags: string[] = [];
-  tagNameInputValue: string = '';
+  
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+  searchQuery: string = '';
 
-  addTag(tagName: string): void {
-    if (this.addTagsOnEnter && tagName.trim() !== '') {
-      this.tags.push(tagName.trim());
-      this.tagNameInputValue = '';
-    }
+  search() {
+    // Implement search functionality here
+    console.log('Searching for:', this.searchQuery);
   }
 
-  removeTag(index: number): void {
-    this.tags.splice(index, 1);
+  constructor(private _dialog: MatDialog,) {}
+  openUserForm(){
+    this._dialog.open(UserRegistrationComponent)
   }
 }

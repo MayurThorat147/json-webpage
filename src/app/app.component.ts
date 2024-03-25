@@ -8,16 +8,6 @@ import { UserRegistrationComponent } from './user-registration/user-registration
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  searchQuery: string = '';
-
-  search() {
-    // Implement search functionality here
-    console.log('Searching for:', this.searchQuery);
-  }
-
-  constructor(private _dialog: MatDialog,) {}
-  openUserForm(){
-    this._dialog.open(UserRegistrationComponent)
-  }
+  
 }
 

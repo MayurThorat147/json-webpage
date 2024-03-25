@@ -1,0 +1,60 @@
+.navbar {
+    background-color: #007bff; /* Light blue background color */
+  }
+  .navbar-brand, .nav-link {
+    color: #fff; /* White text color */
+  }
+  .navbar-toggler-icon {
+    background-color: #fff; /* White color for toggler icon */
+  }
+  .navbar-toggler {
+    border-color: #fff; /* White color for toggler border */
+  }
+  .container .col-md-9 {
+    color: #000; /* Black text color for demo */
+  }
+  .main-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 80vh;
+    margin-top: 50px; /* Full viewport height */
+  }
+  
+  .image-container {
+    width: 50%;
+    padding-right: 15px; /* Adjust as needed */
+  }
+  
+  .user-data-container {
+    width: 50%;
+    padding-left: 15px; /* Adjust as needed */
+  }
+  
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .image-container,
+    .user-data-container {
+        width: calc(100% - 20px); /* Adjusted width */
+        padding: 20px; /* Increased padding */
+        box-sizing: border-box; /* Include padding in width calculation */
+ 
+    }
+  }
+  .image-container button {
+    background-color: yellow;
+    color: grey;
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  p {
+    font-size: 25px; /* Increase font size */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  }

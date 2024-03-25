@@ -1,7 +1,17 @@
-<h1 mat-dialog-title class="title">Register</h1>
+<h1 mat-dialog-title class="title">{{ data ? 'Update User': 'Register' }}</h1>
 
 <form [formGroup]="registerForm" (ngSubmit)="onFormSubmit()">
 <div mat-dialog-content class="content">
+
+    <div class="row">
+        <div class="container text-left">
+  
+          <img [src]="url" formControlName="imageUrl" height="200"><br>
+          <label for="file-upload" class="upload-label">Upload Your Photo</label>
+          <input id="file-upload" type="file" (change)="onselectFile($event)" style="display: none;">  
+      
+        </div>
+        </div><br>
 
     <div class="row">
     <div class="example-container">
@@ -14,12 +24,6 @@
         <input matInput formControlName="lastname" type="text" placeholder="Last Name">
       </mat-form-field>
       </div>
-      </div>
-
-      <div class="row">
-        <mat-label>Upload your photo</mat-label>
-        <input type="file" (change)="onFileSelected($event)" accept="image/*" formControlName="imageUrl">
-        <img [src]="imageUrl" *ngIf="imageUrl" style="max-width: 100%; max-height: 200px;">
       </div>
 
       <div class="row">
@@ -71,13 +75,15 @@
           <div class="row">
             <mat-form-field appearance="outline">
                 <mat-label>Address</mat-label>
-                <input matInput formControlName="address" type="text" placeholder="Address">
+                <textarea matInput formControlName="address" type="text" placeholder="Address"></textarea>
               </mat-form-field>
               </div>
 
           <div class="row">
-            <app-home></app-home>
-              </div>
+            <label>Tags</label>
+            <tag-input formControlName="tagNameInputValue">
+            </tag-input>
+         </div>
 
            <div class="row">
                 <section class="example-section">
@@ -89,6 +95,6 @@
 
 <div mat-dialog-actions>
     <button mat-raised-button class="btn-cancel" type="button" (click)="onCancel()">Cancel</button>
-    <button mat-raised-button class="btn-save" type="submit">Submit</button>
+    <button mat-raised-button class="btn-save" type="submit">{{ data ? 'Update': 'Save' }}</button>
 </div>
 </form>

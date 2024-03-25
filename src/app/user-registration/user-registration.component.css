@@ -27,3 +27,8 @@
     background-color: #2196f3;
     color: white;
 }
+.container .upload-label {
+    color: #2196f3;
+    text-decoration: underline;
+    cursor: pointer;
+  }
