@@ -1,27 +1,4 @@
 {
   "users": [
-    {
-      "id": "b638",
-      "firstname": "Mayur",
-      "lastname": "Thorat",
-      "imageUrl": "/assets/default.jpeg",
-      "email": "mayurthorat147@gmail.com",
-      "phoneNumber": "8879262134",
-      "age": 23,
-      "state": "maharashtra",
-      "country": "india",
-      "address": "706,Shree Shaeba",
-      "tagNameInputValue": [
-        {
-          "display": "cricket",
-          "value": "cricket"
-        },
-        {
-          "display": "badminton",
-          "value": "badminton"
-        }
-      ],
-      "status": true
-    }
   ]
 }
